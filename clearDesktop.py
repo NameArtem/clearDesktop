@@ -12,7 +12,7 @@ allDelFiles = list()                                            #valuer creates 
 
 #function clear your desktop
 def clearDesktop(day,notBanned,workDir,studentTrash):
-    dirMon = os.listdir(path=workDir)                           #if today is Monday all files move to Trash
+    dirMon = os.listdir(path=workDir)                           #if today is Tuesday or Thursday all files move to Trash
     for d in dirMon:
         if day =='Tue' or day == 'Thu':
             if d not in notBanned:
